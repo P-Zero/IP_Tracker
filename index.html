@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="styles.css">
+    <title>IP Address Tracker</title>
+</head>
+<body>
+  <main id="main">
+    <div class="background_container"></div>
+    <div class="search_section" >
+        <h1>IP Address Tracker</h1>
+        <div class="input_container">
+            <input class="ipinput" type="text" placeholder="Your IP" autofocus>
+            <button class="submitip" type="submit"></button>
+        </div>
+    </div>
+    <div class="info_container">
+        <h2>IP ADDRESS</h2>
+        <p class="ipadress"></p>
+        <h2>LOCATION</h2>
+        <p class="location"></p>
+        <h2>TIMEZONE</h2>
+        <p class="timezone"></p>
+        <h2>ISP</h2>
+        <p class="isp"></p>
+    </div>
+    <div id="map"></div>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="main.js"></script>
+</body>
+</html>
